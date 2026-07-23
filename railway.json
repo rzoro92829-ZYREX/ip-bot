@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "python ipshowbot.py",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 180,
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
